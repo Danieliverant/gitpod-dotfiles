@@ -1,0 +1,16 @@
+[user]
+        name = Daniel Liverant
+        email = daniel.liverant@hibob.com
+[core]
+        editor = nano
+[alias]
+        co = checkout
+        c = commit
+        s = status
+[push]
+        default = current
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
